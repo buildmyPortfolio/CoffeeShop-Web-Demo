@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Brew Haven Coffee — Crafted Coffee. Cozy Moments. Freshly brewed coffee and delicious pastries made daily in Manila." />
+  <meta name="theme-color" content="#2C1810" />
+  <title>Brew Haven Coffee</title>
+
+  <!-- Favicon (emoji) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ==============================
+       NAVIGATION
+  =============================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="logo">
+        <i class="fa-solid fa-mug-hot"></i>
+        Brew Haven
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#menu" class="nav-cta">Order Now</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <i class="fa-solid fa-moon" id="themeIcon"></i>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+  <!-- Mobile Nav Overlay -->
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- ==============================
+       HERO SECTION
+  =============================== -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Welcome to Brew Haven</p>
+      <h1 class="hero-title">Crafted Coffee.<br />Cozy Moments.</h1>
+      <p class="hero-subtitle">Freshly brewed coffee and delicious pastries made daily.</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-primary">
+          <i class="fa-solid fa-mug-saucer"></i> View Menu
+        </a>
+        <a href="#about" class="btn btn-secondary">
+          <i class="fa-solid fa-book-open"></i> Our Story
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ==============================
+       ABOUT SECTION
+  =============================== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="about-image fade-in">
+          <img
+            src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=700&q=80"
+            alt="Barista carefully preparing a pour-over coffee"
+            loading="lazy"
+          />
+          <div class="about-badge">
+            <span class="badge-label">Est.</span>
+            <span class="badge-year">2018</span>
+          </div>
+          <div class="about-img-deco"></div>
+        </div>
+
+        <div class="about-content fade-in">
+          <span class="section-eyebrow">Our Story</span>
+          <h2 class="section-title">More Than Just a Cup of Coffee</h2>
+          <p class="about-text">
+            Nestled in the heart of the city, Brew Haven Coffee was born from a deep
+            passion for exceptional coffee and warm community. Since 2018, we've been
+            crafting every cup with care — sourcing the finest locally roasted beans
+            and pairing them with freshly baked pastries.
+          </p>
+          <p class="about-text">
+            Whether you're here for your morning ritual, a focused work session, or a
+            quiet afternoon with a good book — Brew Haven is your cozy corner of calm
+            in a busy world.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">50<span class="stat-plus">+</span></span>
+              <span class="stat-label">Menu Items</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">6K<span class="stat-plus">+</span></span>
+              <span class="stat-label">Happy Customers</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">7</span>
+              <span class="stat-label">Years Brewing</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       MENU SECTION
+  =============================== -->
+  <section class="menu section" id="menu">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-eyebrow">What We Serve</span>
+        <h2 class="section-title">Our Menu</h2>
+        <p class="section-subtitle">Explore our carefully curated selection of drinks and pastries. Click any item for details.</p>
+      </div>
+
+      <!-- Category Tabs -->
+      <div class="menu-tabs fade-in" role="tablist" aria-label="Menu categories">
+        <button class="tab-btn active" data-category="espresso" role="tab" aria-selected="true">☕ Espresso Bar</button>
+        <button class="tab-btn" data-category="iced" role="tab">🧊 Iced Coffee</button>
+        <button class="tab-btn" data-category="signature" role="tab">✨ Signature</button>
+        <button class="tab-btn" data-category="noncoffee" role="tab">🍵 Non-Coffee</button>
+        <button class="tab-btn" data-category="frappe" role="tab">🥤 Frappes</button>
+        <button class="tab-btn" data-category="pastries" role="tab">🥐 Pastries</button>
+        <button class="tab-btn" data-category="addons" role="tab">➕ Add-Ons</button>
+      </div>
+
+      <!-- Price Range Banner -->
+      <div class="price-range-banner fade-in" id="priceRangeBanner">
+        <i class="fa-solid fa-tag"></i>
+        <span id="priceRangeText">Price Range: ₱120 – ₱180</span>
+      </div>
+
+      <!-- Menu Cards Grid -->
+      <div class="menu-grid" id="menuGrid" role="tabpanel">
+        <!-- Populated dynamically by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       FEATURES / SPECIALTY SECTION
+  =============================== -->
+  <section class="features section" id="features">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-eyebrow">Why Choose Us</span>
+        <h2 class="section-title">The Brew Haven Difference</h2>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card fade-in">
+          <div class="feature-icon">
+            <i class="fa-solid fa-seedling"></i>
+          </div>
+          <h3>Locally Roasted Beans</h3>
+          <p>We partner with local roasters to bring you freshly roasted, ethically sourced coffee beans in every single cup.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">
+            <i class="fa-solid fa-bread-slice"></i>
+          </div>
+          <h3>Fresh Pastries Daily</h3>
+          <p>Our pastries are baked fresh every morning — from flaky golden croissants to creamy cheesecakes, made with love.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">
+            <i class="fa-solid fa-wifi"></i>
+          </div>
+          <h3>Cozy Work-Friendly Space</h3>
+          <p>Enjoy fast WiFi, comfortable seating, and a warm ambiance perfect for working, studying, or simply unwinding.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">
+            <i class="fa-solid fa-leaf"></i>
+          </div>
+          <h3>Sustainable Practices</h3>
+          <p>We use eco-friendly packaging and support sustainable farming to protect our planet for generations to come.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       GALLERY SECTION
+  =============================== -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-eyebrow">Our Moments</span>
+        <h2 class="section-title">A Glimpse Inside</h2>
+      </div>
+
+      <div class="gallery-grid fade-in">
+        <div class="gallery-item large">
+          <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=800&q=80" alt="Cozy coffee shop interior" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80" alt="Beautiful latte art" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=600&q=80" alt="Iced coffee close-up" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=600&q=80" alt="Freshly baked croissants" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=600&q=80" alt="Skilled barista at work" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=600&q=80" alt="Warm coffee shop atmosphere" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==============================
+       TESTIMONIALS SECTION
+  =============================== -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-eyebrow">What People Say</span>
+        <h2 class="section-title">Customer Reviews</h2>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-text">
+            "Brew Haven is hands down the best coffee shop in the city. Their Spanish Latte is
+            absolutely divine — I'm completely hooked! The atmosphere is so warm and inviting,
+            I come here every single morning without fail."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">A</div>
+            <div class="author-info">
+              <strong>Andrea Santos</strong>
+              <span>Regular Customer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testimonial-text">
+            "This is my go-to work spot. The WiFi is fast, the coffee is exceptional, and
+            the pastries are incredible. Their Butter Croissant pairs beautifully with an
+            Iced Latte — absolute perfection!"
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">M</div>
+            <div class="author-info">
+              <strong>Miguel Cruz</strong>
+              <span>Freelance Designer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card fade-in">
+          <div class="testimonial-stars" aria-label="4.5 out of 5 stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p class="testimonial-text">
+            "The Salted Caramel Latte is a masterpiece. Every sip is perfectly balanced —
+            sweet, salty, and so smooth. Brew Haven has truly mastered the art of specialty
+            coffee. Highly recommend to everyone!"
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">S</div>
+            <div class="author-info">
+              <strong>Sofia Reyes</strong>
+              <span>Coffee Enthusiast</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==============================
+       CONTACT / LOCATION SECTION
+  =============================== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-eyebrow">Find Us</span>
+        <h2 class="section-title">Visit Brew Haven</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info fade-in">
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h4>Address</h4>
+              <p>123 Brew Street, Makati City<br />Metro Manila, Philippines</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true"><i class="fa-solid fa-clock"></i></div>
+            <div>
+              <h4>Opening Hours</h4>
+              <p>Monday – Friday: 7:00 AM – 9:00 PM<br />Saturday – Sunday: 8:00 AM – 10:00 PM</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:hello@brewhaven.ph">hello@brewhaven.ph</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <p>+63 (02) 8123-4567<br />+63 917 123 4567</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-map fade-in">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.8020158866876!2d121.01353261483967!3d14.554177789831174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c90264aa9e27%3A0xf17f8027e5a83cdb!2sMakati%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1645000000000!5m2!1sen!2sph"
+            width="100%"
+            height="420"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            title="Brew Haven Coffee Location on Google Maps"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       FOOTER
+  =============================== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="#hero" class="logo">
+            <i class="fa-solid fa-mug-hot"></i>
+            Brew Haven
+          </a>
+          <p>Your cozy corner for premium coffee, fresh pastries, and warm community. Every cup crafted with love.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter/X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#menu">Our Menu</a></li>
+            <li><a href="#features">Why Us</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Menu Links -->
+        <div class="footer-links">
+          <h4>Menu</h4>
+          <ul>
+            <li><a href="#menu">Espresso Bar</a></li>
+            <li><a href="#menu">Iced Coffee</a></li>
+            <li><a href="#menu">Signature Drinks</a></li>
+            <li><a href="#menu">Non-Coffee</a></li>
+            <li><a href="#menu">Frappes</a></li>
+            <li><a href="#menu">Pastries & Snacks</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-newsletter">
+          <h4>Stay Updated</h4>
+          <p>Subscribe for new drink drops, exclusive promos, and seasonal specials.</p>
+          <form class="newsletter-form" id="newsletterForm" novalidate>
+            <input type="email" placeholder="Enter your email" required aria-label="Email for newsletter" />
+            <button type="submit" aria-label="Subscribe">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2026 Brew Haven Coffee. All rights reserved.
+          Crafted with <i class="fa-solid fa-heart" aria-hidden="true"></i> and coffee.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==============================
+       MENU ITEM MODAL
+  =============================== -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalItemTitle">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="modalContent">
+        <!-- Populated dynamically by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
